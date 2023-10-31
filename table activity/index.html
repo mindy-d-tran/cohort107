@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table Activity</title>
+  </head>
+
+  <body>
+    <h1>Playing with table elements</h1>
+    <section id="first-activity">
+      <h2>Activity 1</h2>
+      <table>
+        <caption>
+          Practice Table
+        </caption>
+        <thead>
+          <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>col 1 cell 1</td>
+            <td>col 2 cell 2</td>
+            <td>col 3 cell 3</td>
+          </tr>
+          <tr>
+            <td>col 1 cell 1</td>
+            <td>col 2 cell 2</td>
+            <td>col 3 cell 3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>footer1</td>
+            <td>footer2</td>
+            <td>footer3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="second-activity">
+      <h2>Activity 2</h2>
+      <table>
+        <thead>
+          <tr>
+            <!-- colspan makes it take 4 columns worth of space. 
+            can't figure out how to do that with css yet 20231031-->
+            <th colspan="4">0.00</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>C</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>/</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>*</td>
+          </tr>
+
+          <tr>
+            <td>0</td>
+            <td>00</td>
+            <td>.</td>
+            <td>+</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">=</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
