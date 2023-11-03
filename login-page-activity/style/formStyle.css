@@ -1,0 +1,8 @@
+#formStyle {
+    width: 300px;
+    padding: 40px 20px;
+}
+input, textarea, select {
+    width:auto;
+    margin: 15px auto;
+}

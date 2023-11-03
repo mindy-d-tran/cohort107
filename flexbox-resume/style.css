@@ -1,0 +1,46 @@
+/* basic format */
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+html {
+    background-color: pink;
+}
+
+body {
+    padding: 20px;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* flex css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.container, aside.container{
+    flex-direction: column;
+}
+
+#box-1{
+    display:inherit;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#box-1, #box-2{
+    width: 50%;
+}
+
+main.container {
+    flex-grow: 1;
+}
