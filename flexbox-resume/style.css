@@ -1,8 +1,8 @@
 /* basic format */
-* {
+/* * {
     border: 1px solid black;
     box-sizing: border-box;
-}
+} */
 html {
     background-color: pink;
 }
@@ -11,14 +11,40 @@ body {
     padding: 20px;
 }
 
-.bold-font {
+#box-2 > p {
+    margin: 0px;
+    text-align: center;
+}
+
+header {
+    border-bottom: 3px solid palevioletred;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#box-2 >ul:first-child{
+    margin-right: 10px;
     font-weight: bold;
+    text-align: right;
 }
 
 img {
     width: 150px;
     height: 150px;
     object-fit: cover;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    margin: 0px 1px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: gray;
+    display: inline-block;
 }
 
 /* flex css */
@@ -31,16 +57,32 @@ main.container, aside.container{
     flex-direction: column;
 }
 
+section[id^="box"] {
+    display: inherit;
+}
+
 #box-1{
-    display:inherit;
     justify-content: space-evenly;
     align-items: center;
 }
 
 #box-1, #box-2{
-    width: 50%;
+    flex-grow: 1;
+}
+
+#box-2 {
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#box-2 >ul {
+    width: fit-content;
 }
 
 main.container {
     flex-grow: 1;
+}
+.left-right {
+    justify-content: space-between;
 }
