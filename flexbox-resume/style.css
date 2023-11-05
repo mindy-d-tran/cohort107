@@ -1,36 +1,83 @@
 /* basic format */
 * {
+<<<<<<< Updated upstream
     border: 1px solid black;
     box-sizing: border-box;
 }
+=======
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+>>>>>>> Stashed changes
 html {
-    background-color: pink;
+  background-color: pink;
 }
 
 body {
-    padding: 20px;
+  padding: 20px;
 }
 
+<<<<<<< Updated upstream
 .bold-font {
     font-weight: bold;
+=======
+#box-2 > p {
+  margin: 0px;
+  text-align: center;
+}
+
+header {
+  border-bottom: 3px solid palevioletred;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#box-2 > ul:first-child {
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: right;
+>>>>>>> Stashed changes
 }
 
 img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
+<<<<<<< Updated upstream
+=======
+.circle {
+  width: 20px;
+  height: 20px;
+  margin: 0px 1px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: gray;
+  display: inline-block;
+}
+
+>>>>>>> Stashed changes
 /* flex css */
+#root-container {
+  column-gap: 10px; /*margin*/
+}
+
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-main.container, aside.container{
-    flex-direction: column;
+main.container,
+aside.container {
+  flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 #box-1{
     display:inherit;
     justify-content: space-evenly;
@@ -44,3 +91,35 @@ main.container, aside.container{
 main.container {
     flex-grow: 1;
 }
+=======
+section[id^="box"] {
+  display: inherit;
+}
+
+#box-1 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#box-1,
+#box-2 {
+  flex-grow: 1;
+}
+
+#box-2 {
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#box-2 > ul {
+  width: fit-content;
+}
+
+main.container {
+  flex-grow: 1;
+}
+.left-right {
+  justify-content: space-between;
+}
+>>>>>>> Stashed changes
