@@ -1,26 +1,21 @@
 /* general style */
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 html {
   background-color: lightsalmon;
 }
 
-p {
-  margin: 0px;
-}
 
 /* more specific styling */
 body {
-  /* padding: 50px 100px; */
-  justify-content: space-between;
+  padding: 2% 4%;
 }
 
 header {
-  flex-wrap :wrap;
   justify-content: space-between;
-  /* flex-basis: 100%; */
+  row-gap: 10px;
 }
 
 main {
@@ -28,7 +23,9 @@ main {
 }
 
 aside {
+  flex-direction: column;
   flex-basis: 25%;
+  justify-content: space-between;
 }
 
 img {
@@ -36,14 +33,84 @@ img {
   height: 150px;
   object-fit: cover;
 }
+
+#box-2 p {
+  margin: 5px 0px;
+}
+/* styling parent root container */
+#main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: pink;
+  /* display: inline-block; */
+  margin: 0px 2px;
+}
+
+.box-skill-list ul li::before {
+  content: "■";
+  font-size: 1.5em;
+}
+
+/* percent bar style */
+.percent-bar {
+width: inherit;
+height: 1em;
+background-color: gray;
+}
+
+.percentage-bar{
+  height: inherit;
+}
+
+#bar-1 {
+  width: 50%;
+  background-color: red;
+}
+
+#bar-2 {
+  width: 20%;
+  background-color: orange;
+}
+
+#bar-3 {
+  width: 90%;
+  background-color: yellow;
+}
+
+.percentage-bar p {
+  margin: 0px;
+  text-align: right;
+}
+/* end of percent bar style */
 .company-title-time {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
+.box-skill-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 .experience {
   border-bottom: 1px solid black;
+}
+
+h1, h2, h3 {
+  margin: 10px 0px;
+}
+
+.subtitle {
+  margin: 5px 0px;
 }
 
 /* flexbox styling */
@@ -51,24 +118,36 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
 #box-1{
-  /* flex-basis: 60%; */
+  column-gap: 20px;
 }
 
 #box-2 {
   align-items: center;
-  /* flex-basis: 40%; */
   gap: 10px;
 }
 
-/* #box-2-1 {
-  text-align: end;
-} */
+#box-2-1 {
+  font-weight: bold;
+}
 
 #box-3 {
   flex-grow: 1;
+  border-bottom: 3px solid black;
 }
 
+.box-lang {
+  margin: 5px 0;
+  display: flex;
+  align-items: center
+} 
+
+/* psuedo class */
 .experience:last-of-type {
   border: 0;
+}
+
+.box-lang span:nth-child(2){
+  margin-left: 10px;
 }
