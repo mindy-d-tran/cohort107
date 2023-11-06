@@ -1,0 +1,55 @@
+/* general style */
+html {
+  background-color: #ceb0e8;
+}
+
+footer {
+  text-align: center;
+}
+h1 {
+  color: #6746be;
+}
+.page-title {
+  text-align: center;
+  color: #fff;
+}
+/* etc */
+.card-body p {
+  color: #353042;
+}
+
+/* flexbox */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  gap: 10px 5px;
+}
+
+.card-body {
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  /* hide the corners with hidden  thanks to davidvii on stackoverflow*/
+  overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.img-container img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.card-body p,
+.card-body h1 {
+  margin: 8px;
+  padding: 5px 10px;
+}
