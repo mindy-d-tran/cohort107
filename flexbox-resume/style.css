@@ -1,46 +1,31 @@
-/* basic format */
+/* general style */
 * {
-<<<<<<< Updated upstream
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-=======
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
-
->>>>>>> Stashed changes
 html {
-  background-color: pink;
+  background-color: lightsalmon;
 }
 
+
+/* more specific styling */
 body {
-  padding: 20px;
-}
-
-<<<<<<< Updated upstream
-.bold-font {
-    font-weight: bold;
-=======
-#box-2 > p {
-  margin: 0px;
-  text-align: center;
+  padding: 2% 4%;
 }
 
 header {
-  border-bottom: 3px solid palevioletred;
+  justify-content: space-between;
+  row-gap: 10px;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0px;
+main {
+  flex-basis: 70%;
 }
 
-#box-2 > ul:first-child {
-  margin-right: 10px;
-  font-weight: bold;
-  text-align: right;
->>>>>>> Stashed changes
+aside {
+  flex-direction: column;
+  flex-basis: 25%;
+  justify-content: space-between;
 }
 
 img {
@@ -49,77 +34,120 @@ img {
   object-fit: cover;
 }
 
-<<<<<<< Updated upstream
-=======
+#box-2 p {
+  margin: 5px 0px;
+}
+/* styling parent root container */
+#main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
 .circle {
   width: 20px;
   height: 20px;
-  margin: 0px 1px;
   border-radius: 50%;
-  border: 1px solid black;
-  background-color: gray;
-  display: inline-block;
+  background-color: pink;
+  /* display: inline-block; */
+  margin: 0px 2px;
 }
 
->>>>>>> Stashed changes
-/* flex css */
-#root-container {
-  column-gap: 10px; /*margin*/
+.box-skill-list ul li::before {
+  content: "■";
+  font-size: 1.5em;
 }
 
+/* percent bar style */
+.percent-bar {
+width: inherit;
+height: 1em;
+background-color: gray;
+}
+
+.percentage-bar{
+  height: inherit;
+}
+
+#bar-1 {
+  width: 50%;
+  background-color: red;
+}
+
+#bar-2 {
+  width: 20%;
+  background-color: orange;
+}
+
+#bar-3 {
+  width: 90%;
+  background-color: yellow;
+}
+
+.percentage-bar p {
+  margin: 0px;
+  text-align: right;
+}
+/* end of percent bar style */
+.company-title-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.box-skill-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.experience {
+  border-bottom: 1px solid black;
+}
+
+h1, h2, h3 {
+  margin: 10px 0px;
+}
+
+.subtitle {
+  margin: 5px 0px;
+}
+
+/* flexbox styling */
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-main.container,
-aside.container {
-  flex-direction: column;
-}
-
-<<<<<<< Updated upstream
 #box-1{
-    display:inherit;
-    justify-content: space-evenly;
-    align-items: center;
+  column-gap: 20px;
 }
 
-#box-1, #box-2{
-    width: 50%;
-}
-
-main.container {
-    flex-grow: 1;
-}
-=======
-section[id^="box"] {
-  display: inherit;
-}
-
-#box-1 {
-  justify-content: space-evenly;
+#box-2 {
   align-items: center;
+  gap: 10px;
 }
 
-#box-1,
-#box-2 {
+#box-2-1 {
+  font-weight: bold;
+}
+
+#box-3 {
   flex-grow: 1;
+  border-bottom: 3px solid black;
 }
 
-#box-2 {
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: row;
+.box-lang {
+  margin: 5px 0;
+  display: flex;
+  align-items: center
+} 
+
+/* psuedo class */
+.experience:last-of-type {
+  border: 0;
 }
 
-#box-2 > ul {
-  width: fit-content;
+.box-lang span:nth-child(2){
+  margin-left: 10px;
 }
-
-main.container {
-  flex-grow: 1;
-}
-.left-right {
-  justify-content: space-between;
-}
->>>>>>> Stashed changes
