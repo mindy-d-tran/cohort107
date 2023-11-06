@@ -13,12 +13,14 @@ p {
 
 /* more specific styling */
 body {
-  padding: 50px 100px;
+  /* padding: 50px 100px; */
   justify-content: space-between;
 }
 
 header {
-  flex-basis: 100%;
+  flex-wrap :wrap;
+  justify-content: space-between;
+  /* flex-basis: 100%; */
 }
 
 main {
@@ -37,6 +39,7 @@ img {
 .company-title-time {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .experience {
@@ -49,18 +52,22 @@ img {
   flex-wrap: wrap;
 }
 #box-1{
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
 }
 
 #box-2 {
   align-items: center;
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
   gap: 10px;
 }
 
 /* #box-2-1 {
   text-align: end;
 } */
+
+#box-3 {
+  flex-grow: 1;
+}
 
 .experience:last-of-type {
   border: 0;
