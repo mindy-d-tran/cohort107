@@ -46,6 +46,7 @@ aside section[class*="skill"]{
 img {
   width: 150px; 
   height: 150px;
+  border: 0.75em solid #FEF2F4;
   border-radius: 50%;
   object-fit: cover;
 }
